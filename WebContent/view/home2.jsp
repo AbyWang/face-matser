@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			               <div class="row">
 			                    <div class="col-xs-12 col-sm-6 col-md-4">
 			                        <div class="input-group col-md-12" style="margin-top:10px">
-			                        	<input type="text" class="form-control input-sm" id="folderName" name="folderName"  style="border-radius: 6px;">
+			                        	<input type="text" class="form-control input-sm" id="folderName" name="folderName"  style="border-radius: 6px;  ">
 			                          </div>
 			                    </div>
 			                    <div class="col-xs-12 col-sm-6 col-md-4">

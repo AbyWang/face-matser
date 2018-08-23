@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" class="nav">
+<head >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>登录</title>
 
       <link href="plug-in/bootstrap3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">
+      <link rel="stylesheet" href="plug-in/font-awesome/css/font-awesome.css">
+      <link rel="stylesheet" href="css/login.css">
 </head>
-<body>
-    <div class="container">
+<body  >
         <div class="form row">
-            <h3 class="form-title" style="text-align:center">欢迎使用信通人脸识别系统</h3>
             <div class="form-horizontal col-md-offset-3" id="login_form">
                 <div class="col-md-9">
                     <div class="form-group">
                         <i class="fa fa-user fa-lg"></i>
-                        <input class="form-control required" type="text" placeholder="用户名" id="userName" name="userName" autofocus="autofocus" />
+                        <input class="form-control required" type="text" placeholder="请输入账户信息" id="userName" name="userName" autofocus="autofocus" />
                     </div>
                     <div class="form-group">
                             <i class="fa fa-lock fa-lg"></i>
-                            <input class="form-control required" type="password" placeholder="密码" id="password" name="password" />
+                            <input class="form-control required" type="password" placeholder="请输入密码" id="password" name="password" />
                     </div>
                     <div class="form-group">
                         <label class="checkbox">
@@ -28,16 +26,15 @@
                         </label>
                     </div>
                     <div class="form-group col-md-offset-9">
-                     <div role="alert" id="errMsgContiner">
+                        <button type="submit" id="btn_login" onclick="login()" style="background:#4889f1;color:#FFFFFF" class="btn  btn-sm btn-block" name="submit">登录</button>
+                    </div>
+                    <div role="alert" id="errMsgContiner">
 		              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			          <div id="showErrMsg" style="color:red"></div>
 		             </div>
-                        <button type="submit" id="btn_login" onclick="login()" class="btn btn-success pull-right" name="submit">登录</button>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
   <script src="plug-in/jquery/jquery-1.9.1.js"></script>
 
